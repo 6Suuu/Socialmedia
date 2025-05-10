@@ -27,7 +27,7 @@ def load_llava():
         Config.LLAVA_MODEL_NAME,
         torch_dtype=getattr(torch, Config.TORCH_DTYPE),
         device_map=Config.DEVICE,
-        load_in_4bit=True if Config.DEVICE == "cpu" else False,
+        load_in_4bit=True if Config.DEVICE == "cuda" else False,
         cache_dir="./models"
     )
     return processor, model
