@@ -6,7 +6,7 @@ class Config:
     BLIP2_MODEL_NAME = "Salesforce/blip2-opt-2.7b"
     LLAVA_MODEL_NAME = "llava-hf/llava-1.5-7b-hf"
 
-    DEVICE = "cpu"   # 可cuda
+    DEVICE = "cuda"   
     TORCH_DTYPE = "float16"    #半精度加速
 
     # 文案生成模板
