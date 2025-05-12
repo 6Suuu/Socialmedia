@@ -69,7 +69,7 @@ with gr.Blocks(title="智能文案生成器", theme=gr.themes.Soft()) as demo:
                 value="小红书",
                 label="选择平台"
             )
-            generate_btn = gr.Button("开始生成", variant="primary")
+            generate_bnt = gr.Button("开始生成", variant="primary")
 
         output_text = gr.Textbox(
             label="生成结果",
