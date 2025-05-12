@@ -79,7 +79,7 @@ with gr.Blocks(title="智能文案生成器", theme=gr.themes.Soft()) as demo:
         )
 
     # 事件绑定
-    generate_btn.click(
+    generate_bnt.click(
         fn=generate_post,
         inputs=[image_input, platform_dropdowm],
         outputs=output_text
